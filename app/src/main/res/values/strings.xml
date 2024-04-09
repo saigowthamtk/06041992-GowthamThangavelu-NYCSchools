@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">NYCSchools</string>
+
+    <!-- MAIN Activity -->
+    <string name="no_internet">No internet connection</string>
+    <string name="no_data">No data available</string>
+
+
+    <!-- School Details Activity -->
+    <string name="dbn_format">DBN: %1$s</string>
+    <string name="num_test_takers_format">Number of SAT Test Takers: %1$s</string>
+    <string name="sat_reading_score_format">SAT Reading Avg. Score: %1$s</string>
+    <string name="sat_math_score_format">SAT Math Avg. Score: %1$s</string>
+    <string name="sat_writing_score_format">SAT Writing Avg. Score: %1$s</string>
+    <string name="no_sat_score">No Sat Score is available</string>
+    <string name="no_dbn_details">No dbn details is available</string>
+    <string name="no_school_details">No school details is available</string>
+
+    <!-- Generic placeholders -->
+    <string name="school_name_placeholder">School Name Placeholder</string>
+    <string name="dbn_placeholder">DBN Placeholder</string>
+    <string name="num_of_sat_test_takers_placeholder">Num of SAT Test Takers Placeholder</string>
+    <string name="sat_scores_overview">SAT Scores Overview</string>
+    <string name="reading_avg_score">Reading Avg. Score</string>
+    <string name="math_avg_score">Math Avg. Score</string>
+    <string name="writing_avg_score">Writing Avg. Score</string>
+
+    <!-- Action and Navigation -->
+    <string name="navigate_up">Navigate up</string>
+    <string name="progress_format">%1$d/%2$d</string>
+</resources>
