@@ -50,8 +50,7 @@ class SchoolDetailsActivity : AppCompatActivity() {
     private fun fetchAndObserveSchoolDetails(dbn: String) {
         viewModel.fetchSchoolDetails(dbn)
         viewModel.schoolDetails.observe(this) { school ->
-            binding.progressBarDetails.visibility=View.GONE
-            binding.contentLayout.visibility=View.VISIBLE
+            progressBarHide()
             school?.let {
                 displaySchoolDetails(it) } ?: Log.d(TAG, getString(R.string.no_school_details))
         }
@@ -61,6 +60,7 @@ class SchoolDetailsActivity : AppCompatActivity() {
         viewModel.fetchSatScoresForSchool(dbn)
 
         viewModel.satScores.observe(this) { result ->
+            progressBarHide()
             result?.let {
                 displaySatScores(it)
             } ?: run {
@@ -91,5 +91,10 @@ class SchoolDetailsActivity : AppCompatActivity() {
 
     private fun showSnackbar(messageResId: Int) {
         Snackbar.make(binding.root, messageResId, Snackbar.LENGTH_LONG).show()
+    }
+
+    private fun progressBarHide(){
+        binding.progressBarDetails.visibility=View.GONE
+        binding.contentLayout.visibility=View.VISIBLE
     }
 }
