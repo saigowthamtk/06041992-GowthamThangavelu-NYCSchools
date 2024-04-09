@@ -7,10 +7,12 @@ SpashScreen
 All School Main screen
 
 
-<img width="424" alt="Screen Shot 2024-04-08 at 9 53 36 PM" src="https://github.com/saigowthamtk/06041992-GowthamThangavelu-NYCSchools/assets/17901204/f3c2bdb0-7a4d-41bf-9401-1551a6717f69">
-<img width="425" alt="Screen Shot 2024-04-08 at 9 53 44 PM" src="https://github.com/saigowthamtk/06041992-GowthamThangavelu-NYCSchools/assets/17901204/05b70e25-93ae-49df-9230-63def8aff78b">
+<img width="432" alt="Screen Shot 2024-04-08 at 10 22 18 PM" src="https://github.com/saigowthamtk/06041992-GowthamThangavelu-NYCSchools/assets/17901204/f4a6d95e-3642-4a8a-af09-d1839477909d">
+
+<img width="429" alt="Screen Shot 2024-04-08 at 10 22 27 PM" src="https://github.com/saigowthamtk/06041992-GowthamThangavelu-NYCSchools/assets/17901204/09027e67-d3ae-4340-9e62-93356d5a4b8b">
+
 
 School Details Screen
 
+<img width="421" alt="Screen Shot 2024-04-08 at 10 22 37 PM" src="https://github.com/saigowthamtk/06041992-GowthamThangavelu-NYCSchools/assets/17901204/1b40241b-7d31-4cb6-9c7d-000e901255a7">
 
-<img width="334" alt="Screen Shot 2024-04-08 at 9 54 26 PM" src="https://github.com/saigowthamtk/06041992-GowthamThangavelu-NYCSchools/assets/17901204/5d174e46-6c5e-40f3-86fe-ee0ec5263c9c">
