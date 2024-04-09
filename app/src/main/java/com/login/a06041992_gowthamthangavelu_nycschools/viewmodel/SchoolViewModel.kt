@@ -29,7 +29,7 @@ class SchoolViewModel(private val repository: SchoolRepository) : ViewModel() {
     init {
         loadSchools()
     }
-
+    //Fetch All Schools
     fun loadSchools() {
         viewModelScope.launch(coroutineExceptionHandler) {
             val schoolsList = repository.getSchools()
@@ -37,6 +37,7 @@ class SchoolViewModel(private val repository: SchoolRepository) : ViewModel() {
         }
     }
 
+    //Fetch School details
     fun fetchSchoolDetails(dbn: String) {
         viewModelScope.launch(coroutineExceptionHandler) {
             val details = repository.getSchoolDetails(dbn)
@@ -44,6 +45,7 @@ class SchoolViewModel(private val repository: SchoolRepository) : ViewModel() {
         }
     }
 
+    //Fetch Sat scores
     fun fetchSatScoresForSchool(dbn: String) {
         viewModelScope.launch(coroutineExceptionHandler) {
             val scores = repository.getSatScoresForSchool(dbn)

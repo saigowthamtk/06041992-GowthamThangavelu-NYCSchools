@@ -11,7 +11,7 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splashscreen)
-
+        //Spash screen scheduled to MainActivity in 3 sec
         Handler().postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             finish()

@@ -7,7 +7,9 @@ import com.login.a06041992_gowthamthangavelu_nycschools.R
 import com.login.a06041992_gowthamthangavelu_nycschools.data.model.School
 import com.login.a06041992_gowthamthangavelu_nycschools.databinding.ItemSchoolBinding
 
-
+/**
+ * Creating adapter to display the Schools
+ */
 class SchoolAdapter(
     private val schools: List<School>,
     private val onClick: (School) -> Unit
@@ -16,6 +18,7 @@ class SchoolAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SchoolViewHolder {
         val binding = ItemSchoolBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return SchoolViewHolder(binding).apply {
+            //ClickListener to open SchooldetailsActivity based on position
             itemView.setOnClickListener {
                 val position = adapterPosition.takeIf { it != RecyclerView.NO_POSITION } ?: return@setOnClickListener
                 onClick(schools[position])
@@ -32,11 +35,10 @@ class SchoolAdapter(
     class SchoolViewHolder(
         private val binding: ItemSchoolBinding
     ) : RecyclerView.ViewHolder(binding.root) {
-
+        //Binding the values in XML
         fun bind(school: School) {
             with(binding) {
                 schoolName.text = school.school_name
-                schoolBoro.text = school.boro
                 schoolOverview.text = school.overview_paragraph
                 schoolOverview.maxLines = 3
 

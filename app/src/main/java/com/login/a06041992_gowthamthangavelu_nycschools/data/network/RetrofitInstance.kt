@@ -10,6 +10,11 @@ import okhttp3.logging.HttpLoggingInterceptor
 import java.util.concurrent.TimeUnit
 
 
+/**
+ * configures a Retrofit instance for API Calls.
+ * setting the base URL for open data API
+ * Setting up the connectTimeout
+ */
 object RetrofitInstance {
     private const val BASE_URL = "https://data.cityofnewyork.us/resource/"
 

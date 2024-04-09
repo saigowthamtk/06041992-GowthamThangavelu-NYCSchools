@@ -9,12 +9,15 @@ class SchoolRepository() {
 
      val apiService = RetrofitInstance.api
 
+    //Get All School
     suspend fun getSchools(): List<School> {
         return apiService.getSchools()
     }
 
+    //Get School details based on dbn
     suspend fun getSchoolDetails(dbn: String): School? = apiService.getSchools().find { it.dbn == dbn }
 
+    //Get SAT score based on dbn
     suspend fun getSatScoresForSchool(dbn: String): SatScore? = apiService.getSatScores().find { it.dbn == dbn }
 
 }
